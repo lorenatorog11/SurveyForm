@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <section class="backgroud">
+        <header>
+            <h1 id="title">Corporación Ambiental Ambiente Limpio</h1>
+            <h2 id="title-abre"> -- CORAMAL -- </h2>
+            <p id="description">Las consecuencias ambientales producto de la intervención antrópico del ser humano, han llevado a la sociedad a replantear la manera en que nos relacionamos con el entorno natural y como la industria ejecuta sus procesos, en pro de idear soluciones a la contaminación ambiental que estamos generando. Es por esto, que CORAMAR desea compartir con ustedes algunos cursos que pueden contribuir a mejorar las problemáticas ambientales que actualmente afrontamos. Podrás inscribirte de manera GRATUITA y obtener certificado si asistes al 100% del curso; los cursos tendrán una duración de 8 semanas y se realizaran de manera virtual. </p>
+        </header>
+        <main>
+            <form accion="#" id="survey-form">
+                <section class="label">
+                    <label class="title-label" for="name">Nombre</label>
+                    <input class="input" id="name" type="text" placeholder="Juana Pérez Osorio" required/>
+                </section>
+                <section class="label"><!--Mostrar validation error cuando no es un correo-->
+                    <label class="title-label" for="number">Cedúla</label>
+                    <input class="input" id="number" type="number" placeholder="1025369871" name="number" min="100000" max="9999999999" required/>
+                </section>
+                <section class="label">
+                    <label class="title-label" for="email">E-mail</label><!--Mostrar validation error cuando no es un correo-->
+                    <input class="input" id="email" type="email" placeholder="juanap@gmail.com" required/> 
+                </section>
+                <section class="label">
+                    <label class="title-label" for="dropdown-occupation">Ocupación</label>
+                    <select class="input" id="dropdown-occupation">
+                        <option value="select">Seleccione una opción</option>
+                        <option value="estudent">Estudiante</option>
+                        <option value="ind_worker">Trabajador Independiente</option>
+                        <option value="dep_worker">Trabajador Dependiente</option>
+                        <option value="unemployed">Desempleado</option>
+                    </select>
+                </section>
+                <section class="label">
+                    <label class="title-label">Cursos</label>
+                    <div id="course-list">
+                        <label class="checkbox"><input type="checkbox" value="first-course" id="course" >Economía Circular. Horario: Martes 8:00 - 10:00</label>
+                        <label class="checkbox"><input type="checkbox" value="second-course" id="course">Sostenibilidad Ambiental. Horario: Martes 14:00 -16:00  </label>
+                        <label class="checkbox"><input type="checkbox" value="third-course" id="course">Manejo Integral de Residuos Sólido. Horario: Jueves 8:00 - 10:00</label>
+                        <label class="checkbox"><input type="checkbox" value="fourth-course" id="course">Operación de Plantas de Tratamiento de Agua Potable. Horario: Jueves 14:00 -16:00 </label>
+                    </div>                
+                </section>
+                <section class="information">
+                    <label class="title-label">¿Desea recibir información de más cursos?</label>
+                    <div id="info">
+                        <label><input type="radio" name="yes-not" id="yes-info">Sí</label>
+                        <label><input type="radio" name="yes-not" id="not-info">No</label>
+                    </div>
+                </section>
+                <section>
+                    <input class="send-info" type="submit">
+                </section>
+            </form>        
+        </main>
+        <footer class="footer">
+            <h3><em>¡CORAMAR Agradece su participación!</em></h3>
+        </footer>
+    </section>
+</body>
+</html>
